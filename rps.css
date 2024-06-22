@@ -1,0 +1,144 @@
+body {
+    background-color: #181818;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background-color: #121212;
+    position: relative;
+    height: 700px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#rock {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#paper {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#scissors {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.results {
+    border: 1px white dashed;
+    position: relative;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+#qmark {
+    margin-top: 25px;
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#vs {
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#qmark2 {
+    margin-top: 25px;
+    grid-column: 3;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: space-around;
+}
+
+#yourScore {
+    grid-column: 1;
+    font-size: 34px;
+    font-family: 'Segoe UI' bold;
+    color: white;
+}
+
+#opponentScore {
+    grid-column: 2;
+    font-size: 34px;
+    font-family: 'Segoe UI' bold;
+    color: white;
+}
+
+#text_style {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: white;
+    margin-top: -20px;
+}
+
+#result {
+    font-size: 25px;
+    font-family: 'Segoe UI';
+    color: white;
+    margin-top: -20px;
+    margin: 5px;
+}
+
+#resetScore {
+    position: relative;
+    margin-top: 50px;
+    --bg: #181818;
+    --hover-bg: white;
+    --hover-text: #181818;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+        }
+      
+#resetScore:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+        }
+      
+#resetScore:active {
+    transform: translate(0);
+    box-shadow: none;
+        }
+
+.container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container img:hover {
+    transform: scale(1.1); /* Scale the image to 110% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
